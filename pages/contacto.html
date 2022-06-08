@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!--menú y logo-->
+    <header id="header">
+        <picture class="header__logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="logo">
+            </a>
+        </picture>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="../index.html" class="menu__link">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./pages/contacto.html" class="menu__link">Contacto</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./pages/blog.html" class="menu__link">Blog</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./pages/sobre-mi.html" class="menu__link">Sobre mí</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./pages/patologias-tratamientos.html" class="menu__link">Patologías y tratamientos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--contenidos e información-->
+    <main id="main">
+        <h1>Formulario de contacto</h1>
+        <article class="form">
+            <form id="formulario" action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Nombre" id="nombre" name="nombre" class="form__item">
+                <label for="email">Mail:</label>
+                <input type="email" placeholder="Correo electrónico" id="email" name="email" class="form__item">
+                <label for="consulta"></label>
+                <textarea name="consulta" id="consulta" placeholder="Consulta" class="form__textarea"></textarea>
+                <label for="suscribirse" class="form__suscription">Quiero suscribirme</label>
+                <input type="radio" id="suscribirse" name="suscripcion" value="yes">
+                <label for="nosuscribirse" class="form__suscription">En otro momento</label>
+                <input type="radio" id="nosuscribirse" name="suscripcion" value="no">
+                <input type="submit" value="Submit" class="form__submit">
+            </form>
+        </article>
+        <article class="main__blog">
+            <div class="blog__post">
+                <h2>Blog</h2>
+            </div>
+            <div class="blog__post2">
+                <h2>Blog</h2>
+            </div>
+            <div class="blog__post3">
+                <h2>Blog</h2>
+            </div>
+        </article>
+    </main>
+    <!--pié de página, redes sociales y mail-->
+    <footer id="footer">
+        <h2>lic_blabla@contact.com</h2>
+        <picture class="footer__media">
+            <img src="../img/facebook-brands.svg" alt="facebook logo">
+            <img src="../img/instagram-brands.svg" alt="instagram logo">
+            <img src="../img/twitter-brands.svg" alt="twitter logo">
+        </picture>
+    </footer>
+</body>
+</html>
