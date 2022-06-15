@@ -24,10 +24,6 @@ img {
 	width: 100%;
 }
 /*main*/
-#main {
-	background-color: #000000;
-}
-
 main .main__section {
 	height: 13em;
 }
@@ -40,11 +36,15 @@ main .main__parallax {
 	background-size: cover;
 	height: 85vh;
 }
-/*main form*/
+
 main form {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+}
+
+form .form__submit {
+	margin: 0em 25em;
 }
 /*footer*/
 #footer {
