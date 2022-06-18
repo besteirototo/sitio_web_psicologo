@@ -1,12 +1,6 @@
 /*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 /*normalize*/
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 body {
 	font-family: 'Poppins', sans-serif;
 	background-color: #000000;
@@ -19,13 +13,24 @@ ul {
 a {
 	text-decoration: none;
 }
+/*header*/
+#header img {
+	max-width: 40%;
+}
 
-img {
-	width: 100%;
+#header .row .menu__link {
+	transition: 0.8s;
+	border: 0.1em solid #000000;
+	color: #ffffff;
+}
+
+#header .row .menu__link:hover {
+	color: rgb(143, 141, 141);
+    border-bottom: 0.1em solid #f7c760;
 }
 /*main*/
 main .main__section {
-	height: 13em;
+	height: 30vh;
 }
 
 main .main__parallax {
@@ -34,17 +39,13 @@ main .main__parallax {
 	background-position: start;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 85vh;
+	height: 80vh;
 }
 
 main form {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-}
-
-form .form__submit {
-	margin: 0em 25em;
 }
 /*footer*/
 #footer {
@@ -53,17 +54,62 @@ form .form__submit {
 	height: 15vh;
 }
 
-#footer section {
-	gap: 2em;
+#footer section h2 {
+	font-size: 90%;
 }
 
-#footer img {
-	max-height: 3em;
-	max-width: 3em;
+#footer section picture{
+	display: flex;
+	gap: 1%;
+}
+
+#footer svg {
+	width: 5vw;
+	height: 5vh;
 	filter: invert(1);
 }
+/*responsive*/
+@media screen and (min-width: 1090px) {
+	#header picture {
+		max-width: 90%;
+	}
+}
 
-#footer picture {
-	display: flex;
-	gap: 1em;
+@media screen and (max-width: 995px) {
+	#header ul a {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#header nav {
+		justify-content: center;
+	}
+	
+	#header picture {
+		display: flex;
+		justify-content: center;
+		max-width: 30vh;
+	}
+	
+	#header picture a {
+		display: flex;
+		justify-content: center;
+	}
+
+	#header img {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	#header ul a {
+		font-size: 60%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#main p {
+		font-size: 80%;
+	}
 }
