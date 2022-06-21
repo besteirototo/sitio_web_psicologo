@@ -1,0 +1,11 @@
+/*main*/
+.main__content {
+	display: flex;
+	color: $primary;
+    background-color: #08A4BD;
+	min-height: 40vh;
+
+	p {
+		text-align: $center;
+	}
+}

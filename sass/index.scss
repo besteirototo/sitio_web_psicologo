@@ -1,0 +1,14 @@
+/*misc*/
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+
+/*partials*/
+@import './partials/header';
+@import './partials/main';
+@import './partials/footer';
+
+/*views*/
+@import './views/home';
+@import './views/contacto';
+@import './views/patologias-y-tratamientos';

@@ -1,0 +1,80 @@
+/*misc*/
+/*normalize*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0vw 1vw;
+  background-color: #000000; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+/*partials*/
+/*header*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  margin: 0vw 1vw; }
+  .nav__logo {
+    max-width: 20vw; }
+  .nav__img {
+    height: 100%; }
+  .nav .menu {
+    display: flex;
+    align-items: center; }
+    .nav .menu__item {
+      padding: 1em 1em; }
+    .nav .menu__link {
+      color: #ffffff; }
+
+/*main*/
+.main__content {
+  display: flex;
+  color: #ffffff;
+  background-color: #08A4BD;
+  min-height: 40vh; }
+  .main__content p {
+    text-align: center; }
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #D55672; }
+  .footer__subtitle {
+    color: #ffffff;
+    font-size: 100%; }
+  .footer__article {
+    display: flex;
+    align-items: center;
+    margin: 1vw 3vw;
+    gap: 1vw; }
+    .footer__article .media {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .footer__article .media__icon {
+        max-width: 3em;
+        max-height: 3em; }
+
+/*views*/
+/*home*/
+.main__parallax {
+  background-image: url(../img/Psicosis.png);
+  background-attachment: fixed;
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 83vh;
+  margin: 0vw 1vw; }

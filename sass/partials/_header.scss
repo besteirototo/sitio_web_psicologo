@@ -1,0 +1,28 @@
+/*header*/
+.nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: #000000;
+	margin: $base;
+
+	&__logo {
+		max-width: 20vw;
+	}
+
+	&__img {
+		height: 100%;
+	}
+
+	.menu {
+		display: flex;
+		align-items: $center;
+
+		&__item {
+			padding: 1em 1em;	
+		}	
+
+		&__link {
+			color: $primary;
+		}
+	}
+}
