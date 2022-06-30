@@ -1,3 +1,5 @@
+/*fonts*/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Quicksand:wght@400;500;700&display=swap);
 /*misc*/
 /*normalize*/
 * {
@@ -6,8 +8,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0vw 1vw;
+  font-family: "Poppins";
+  margin: 0vh 1vw;
   background-color: #000000; }
 
 ul {
@@ -23,58 +25,202 @@ img {
 /*header*/
 .nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  gap: 0em;
   background-color: #000000;
-  margin: 0vw 1vw; }
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  padding-right: 0em;
+  padding-left: 0em; }
   .nav__logo {
     max-width: 20vw; }
   .nav__img {
     height: 100%; }
   .nav .menu {
     display: flex;
-    align-items: center; }
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0em; }
     .nav .menu__item {
-      padding: 1em 1em; }
+      margin-top: 0em;
+      margin-bottom: 0em;
+      margin-right: 0em;
+      margin-left: 0em;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      padding-right: 1vw;
+      padding-left: 1vw; }
     .nav .menu__link {
-      color: #ffffff; }
+      color: #ffffff;
+      transition: color 0.8s; }
+    .nav .menu__link:hover {
+      border-bottom: 1em;
+      border-color: white;
+      color: #4b4848ee; }
 
 /*main*/
-.main__content {
-  display: flex;
+.main {
   color: #ffffff;
   background-color: #08A4BD;
   min-height: 40vh; }
-  .main__content p {
-    text-align: center; }
+  .main__content {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-right: 0em;
+    margin-left: 0em;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 4vw;
+    padding-left: 4vw; }
+  .main__subtitle, .main__p {
+    padding-bottom: 0.5vh;
+    font-family: "Quicksand"; }
+  .main__p {
+    text-align: justify; }
 
 /*footer*/
 .footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  gap: 0em;
   background-color: #D55672; }
   .footer__subtitle {
     color: #ffffff;
     font-size: 100%; }
   .footer__article {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    margin: 1vw 3vw;
-    gap: 1vw; }
+    gap: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 0em;
+    padding-left: 0em; }
     .footer__article .media {
       display: flex;
+      flex-direction: row;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      gap: 0em; }
       .footer__article .media__icon {
         max-width: 3em;
         max-height: 3em; }
 
 /*views*/
 /*home*/
-.main__parallax {
-  background-image: url(../img/Psicosis.png);
-  background-attachment: fixed;
-  background-position: start;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 83vh;
-  margin: 0vw 1vw; }
+.carousel {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  padding-right: 0em;
+  padding-left: 0em; }
+
+/*contacto*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  padding-right: 0em;
+  padding-left: 0em; }
+  .contact__form, .contact__form fieldset, .contact__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    gap: 0.5em;
+    margin-left: 4vw; }
+  .contact__item {
+    width: 60vw; }
+  .contact button {
+    width: 5em;
+    margin-top: 1vw; }
+
+/*patologias y tratamientos*/
+.pyt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-right: 0em;
+  margin-left: 0em;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  padding-right: 6vw;
+  padding-left: 6vw; }
+  .pyt__title, .pyt__subtitle {
+    font-family: "Quicksand"; }
+  .pyt__subtitle {
+    font-size: 1.7em; }
+  .pyt__img {
+    max-width: 30vw; }
+
+/*sobre mi*/
+.video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0em;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  margin-right: 0em;
+  margin-left: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  padding-right: 0em;
+  padding-left: 0em; }
+  .video__title {
+    font-family: "Quicksand"; }
+
+/*blog*/
+.blog {
+  min-height: 50vh;
+  align-items: center; }
+  .blog__item {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-right: 0em;
+    padding-left: 0em; }
+    .blog__item img {
+      max-width: 20vw; }
+  .blog__button {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em; }

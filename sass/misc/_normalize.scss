@@ -6,9 +6,9 @@
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
-	margin: $base;
-	background-color: #000000;
+	font-family: map-get($fonts, $key: secondary);
+	margin: 0vh 1vw;
+	background-color: map-get($colors, $key: background);
 }
 
 ul {

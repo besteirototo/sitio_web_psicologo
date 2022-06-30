@@ -1,0 +1,17 @@
+/*blog*/
+.blog {
+    min-height: 50vh;
+    align-items: center;
+
+    &__item {
+        @include space(5vh, 2vw, 0em, 0em);
+
+        img {
+            max-width: 20vw;
+        }
+    }
+
+    &__button {
+        @include space(3vh, 1vw, 0.5em, 0.5em);
+    }
+}

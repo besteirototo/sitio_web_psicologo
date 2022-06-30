@@ -1,0 +1,9 @@
+/*sobre mi*/
+.video {
+    @include flex(row, center, center, 0em);
+    @include space(6vh, 0em, 0em, 0em);
+
+    &__title {
+        font-family: map-get($fonts, $key: primary);
+    }
+}

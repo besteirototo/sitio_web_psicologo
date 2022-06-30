@@ -1,9 +1,8 @@
 /*header*/
 .nav {
-	display: flex;
-	justify-content: space-between;
-	background-color: #000000;
-	margin: $base;
+	@include flex(row, space-between, center, 0em);
+	background-color: map-get($colors, $key: background);
+	@include space(0em, 1vw, 0em, 0em);
 
 	&__logo {
 		max-width: 20vw;
@@ -14,15 +13,21 @@
 	}
 
 	.menu {
-		display: flex;
-		align-items: $center;
+		@include flex(row, flex-start, center, 0em);
 
 		&__item {
-			padding: 1em 1em;	
+			@include space(0em, 0em, 2vh, 1vw);	
 		}	
 
 		&__link {
-			color: $primary;
+			color: map-get($colors, $key: primary);
+			transition: color 0.8s;
+		}
+
+		&__link:hover {
+			border-bottom: 1em;
+			border-color: white;
+			color: #4b4848ee; 
 		}
 	}
 }

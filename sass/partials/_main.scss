@@ -1,11 +1,20 @@
 /*main*/
-.main__content {
-	display: flex;
-	color: $primary;
-    background-color: #08A4BD;
+.main {
+	color: map-get($colors, $key: primary);
+    background-color: map-get($colors, $key: main);
 	min-height: 40vh;
 
-	p {
-		text-align: $center;
+    &__content {
+		@include space(0em, 0em, 2vh, 4vw);
+	}	
+	
+	&__subtitle {
+		padding-bottom: 0.5vh;
+		font-family: map-get($fonts, $key: primary);
+	}
+
+	&__p {
+		@extend .main__subtitle;
+		text-align: justify;
 	}
 }

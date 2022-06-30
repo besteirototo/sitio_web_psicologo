@@ -1,10 +1,4 @@
 /*home*/
-.main__parallax {
-	background-image: url(../img/Psicosis.png);
-	background-attachment: fixed;
-	background-position: start;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 83vh;
-	margin: $base;
+.carousel {
+	@include space(10vh, 4vw, 0em, 0em);
 }

@@ -1,0 +1,24 @@
+/*contacto*/
+.contact {
+    @include flex(column, center, center, 0.5em);
+    @include space(4vh, 2vw, 0em, 0em);
+
+    &__form {
+        @include flex(column, center, normal, 0.5em);
+        margin-left: 4vw;
+
+        fieldset {
+            @extend .contact__form;
+        }
+    }
+
+    &__item {
+        @extend .contact__form;
+        width: 60vw;
+    }
+
+    button {
+        width: 5em;
+        margin-top: 1vw;
+    }
+}

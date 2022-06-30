@@ -1,3 +1,12 @@
-$primary: #ffffff;
-$base: 0vw 1vw;
-$center: center;
+$colors: (
+    primary: #ffffff,
+    main: #08A4BD,
+    secondary: #D55672,
+    background: #000000, 
+);
+
+$fonts: (
+    primary: 'Quicksand',
+    secondary: 'Poppins',
+);
+

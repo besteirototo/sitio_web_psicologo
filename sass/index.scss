@@ -1,3 +1,6 @@
+/*fonts*/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Quicksand:wght@400;500;700&display=swap);
+
 /*misc*/
 @import './misc/variables';
 @import './misc/normalize';
@@ -12,3 +15,5 @@
 @import './views/home';
 @import './views/contacto';
 @import './views/patologias-y-tratamientos';
+@import './views/sobre-mi';
+@import './views/blog';

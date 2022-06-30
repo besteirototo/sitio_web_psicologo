@@ -1,0 +1,18 @@
+@mixin flex($dir, $jus, $alg, $gap) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $alg;
+    gap: $gap;
+}
+
+@mixin space($mh, $mw, $ph, $pw) {
+    margin-top: $mh;
+    margin-bottom: $mh;
+    margin-right: $mw;
+    margin-left: $mw;
+    padding-top: $ph;
+    padding-bottom: $ph;
+    padding-right: $pw;
+    padding-left: $pw;
+}

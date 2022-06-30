@@ -1,24 +1,19 @@
 /*footer*/
 .footer {
-	display: flex;
-	justify-content: space-between;
-	background-color: #D55672;
+	@include flex(row, space-between, center, 0em);
+	background-color: map-get($colors, $key: secondary);
 	
 	&__subtitle {
-		color: $primary;
+		color: map-get($colors, $key: primary);
 		font-size: 100%;
 	}
 
 	&__article {
-		display: flex;
-		align-items: $center;
-		margin: 1vw 3vw;
-		gap: 1vw;		
+		@include flex(row, flex-start, center, 1vw);
+		@include space(1vh, 3vw, 1vh, 0em);		
 		
 		.media {
-			display: flex;
-			justify-content: $center;
-			align-items: $center;
+			@include flex(row, center, center, 0em);
 
 			&__icon {
 				max-width: 3em;
