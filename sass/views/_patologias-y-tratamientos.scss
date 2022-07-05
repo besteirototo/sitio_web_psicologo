@@ -16,3 +16,21 @@
         max-width: 30vw;
     }
 }
+/*media querys*/
+@media screen and (max-width: 900px) {
+	.pyt .pyt__subtitle {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+	main .pyt {
+        padding-top: 0em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+	.pyt .pyt__subtitle {
+        font-size: 1.4em;
+    }
+}

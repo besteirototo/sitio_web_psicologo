@@ -2,3 +2,10 @@
 .carousel {
 	@include space(10vh, 4vw, 0em, 0em);
 }
+/*media querys*/
+@media screen and (max-width: 800px) {
+	main .carousel {
+		margin-top: 0em;
+		margin-bottom: 1.5em;
+	}
+}

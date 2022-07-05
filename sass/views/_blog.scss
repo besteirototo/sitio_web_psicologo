@@ -3,15 +3,78 @@
     min-height: 50vh;
     align-items: center;
 
-    &__item {
+    h1 {
+        color: map-get($colors, $key: primary);
+        font-family: map-get($fonts, $key: primary);
+        @include space(2vh, 2vw, 0em, 0em);
+    }
+
+    &__content {
+        @include flex(row, flex-start, center, 0em);
         @include space(5vh, 2vw, 0em, 0em);
 
         img {
-            max-width: 20vw;
+            width: 20vw;
+            height: 25vh;
+        }
+    }
+
+    &__item {
+        @include flex(column, center, normal, 0em);
+
+        h2 {
+            color: map-get($colors, $key: primary);
+            margin-left: 4vw;
+        }
+
+        p {
+            @extend h2;
         }
     }
 
     &__button {
-        @include space(3vh, 1vw, 0.5em, 0.5em);
+        @include flex(row, center, normal, 0em);
+        @include space(2vh, 2vw, 0em, 0em);
+    }
+}
+/*media querys*/
+@media screen and (max-width: 1200px) {
+	.blog__content img {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 765px) {
+	.blog__content img {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+	.blog .blog__content {
+        @include flex(column, center, center, 3em);
+    }
+
+    .blog__item {
+        @include flex(column, center, center, 0em);
+    }
+}
+
+@media screen and (max-width: 600px) {
+	.blog__content img {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+	.blog__content img {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+	.blog__content img {
+        width: 60vw;
+        height: 18vh;
     }
 }

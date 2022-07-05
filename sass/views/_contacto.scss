@@ -3,6 +3,10 @@
     @include flex(column, center, center, 0.5em);
     @include space(4vh, 2vw, 0em, 0em);
 
+    h1 {
+        font-family: map-get($fonts, $key: primary);
+    }
+
     &__form {
         @include flex(column, center, normal, 0.5em);
         margin-left: 4vw;
@@ -20,5 +24,21 @@
     button {
         width: 5em;
         margin-top: 1vw;
+    }
+}
+/*media querys*/
+@media screen and (max-width: 570px) {
+	main .contact__form {
+		margin-left: 0em;
+	}
+
+    .contact h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact h1 {
+        font-size: 1.2em;
     }
 }

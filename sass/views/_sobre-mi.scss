@@ -1,9 +1,24 @@
 /*sobre mi*/
 .video {
-    @include flex(row, center, center, 0em);
-    @include space(6vh, 0em, 0em, 0em);
+    @include flex(column, center, center, 1vh);
+    @include space(3vh, 0em, 0em, 0em);
 
     &__title {
-        font-family: map-get($fonts, $key: primary);
+        @extend .video;
+        @include space(1vh, 3vw, 0em, 0em);
+
+        h1 {
+            font-family: map-get($fonts, $key: primary);
+        }
+    }
+
+    &__content {
+        @include flex(row, center, center, 0em);
+        @include space(0em, 3vw, 0em, 1vw);
+    }
+
+    &__p {
+        @extend .video;
+        @include space(1vh, 3vw, 1vh, 0em);
     }
 }
