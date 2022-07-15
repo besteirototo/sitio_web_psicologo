@@ -34,12 +34,12 @@ img {
   margin-bottom: 0em;
   margin-right: 1vw;
   margin-left: 1vw;
-  padding-top: 0em;
-  padding-bottom: 0em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   padding-right: 0em;
   padding-left: 0em; }
   .nav__logo {
-    max-width: 20vw; }
+    max-width: 19vw; }
   .nav__img {
     height: 100%;
     border-radius: 0.5em; }
@@ -48,7 +48,15 @@ img {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 0em; }
+    gap: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-right: 0em;
+    margin-left: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-right: 0em;
+    padding-left: 0em; }
     .nav .menu__item {
       margin-top: 0em;
       margin-bottom: 0em;
@@ -213,8 +221,8 @@ img {
 /*views*/
 /*home*/
 .carousel {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 2em;
+  margin-bottom: 2em;
   margin-right: 4vw;
   margin-left: 4vw;
   padding-top: 0em;
@@ -226,7 +234,9 @@ img {
 @media screen and (max-width: 800px) {
   main .carousel {
     margin-top: 0em;
-    margin-bottom: 1.5em; } }
+    margin-bottom: 1.5em; }
+  main .main__content iframe {
+    width: 90%; } }
 
 /*contacto*/
 .contact {

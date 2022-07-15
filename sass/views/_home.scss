@@ -1,6 +1,6 @@
 /*home*/
 .carousel {
-	@include space(10vh, 4vw, 0em, 0em);
+	@include space(2em, 4vw, 0em, 0em);
 }
 /*media querys*/
 @media screen and (max-width: 800px) {
@@ -8,4 +8,9 @@
 		margin-top: 0em;
 		margin-bottom: 1.5em;
 	}
+
+	main .main__content iframe {
+		width: 90%;
+	}
+
 }
